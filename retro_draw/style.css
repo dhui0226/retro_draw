@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+}
+
+header {
+    text-align: center;
+    font-size: 75px;
+    font-family: monospace;
+}
+
+.palette {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: flex;
+    width: 514px;
+    height: 514px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 48px;
+}
+
+.cell {
+    flex: 0 0 64px;
+    width: 64px;
+    height: 64px;
+    border: 1px solid black;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+
+}
+
+button {
+    flex: 0 0 64px;
+    width: 64px;
+    height: 64px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.active {
+    transform: rotate(45deg);
+    transition: .5s;
+    border: 5px solid gold;
+}
